@@ -13,9 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
       animation: {
-        "gradient-x": "gradient-x 8s ease infinite",
-        "gradient-y": "gradient-y 8s ease infinite",
-        "gradient-xy": "gradient-xy 8s ease infinite",
+        "gradient-x": "gradient-x 5s ease infinite",
+        "gradient-y": "gradient-y 5s ease infinite",
+        "gradient-xy": "gradient-xy 5s ease infinite",
       },
       keyframes: {
         "gradient-y": {
