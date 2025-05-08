@@ -4,15 +4,14 @@ import Handshake from "/public/handshake.svg";
 export default function NavBar({ className }: { className?: string }) {
   return (
     <div
-      className={`shadow-xl w-full grid grid-cols-3 place-items-center p-2 bg-black/100 backdrop-blur-xl items-center ${className}`}
+      className={`shadow-xl w-full grid grid-cols-2 md:grid-cols-3 p-2 bg-black/100 backdrop-blur-xl items-center ${className}`}
     >
-      <div></div>
-      <div className="grid grid-flow-col gap-2">
+      <div className="grid grid-flow-col gap-2 md:col-start-2 md:justify-center justify-start">
         <button className="p-1">Projects</button>
         <button className="p-1">Resume</button>
         <button className="p-1">Contact</button>
       </div>
-      <div className="grid grid-flow-col gap-3 items-center">
+      <div className="grid grid-flow-col gap-3 items-center md:justify-center justify-end">
         <a href="https://www.linkedin.com/in/lucas-c-anderson/">
           <FontAwesomeIcon
             icon={faLinkedin}
