@@ -1,10 +1,14 @@
 import ProjectCard from "@/components/ProjectCard";
+import SocialVerticalBar from "@/components/SocialVerticalBar";
 
 export default function Home() {
   return (
     <main className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <div className="bg-gradient-to-r from-sky-500 to-sky-600 animate-gradient-x">
-        <div className="flex justify-center py-32">
+        <div className="grid grid-cols-3 h-96 items-center">
+          <div>
+            <SocialVerticalBar />
+          </div>
           <div className="flex flex-col gap-3">
             <h1 className="text-6xl font-bold drop-shadow-sm">
               Lucas Anderson

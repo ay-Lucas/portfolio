@@ -6,8 +6,8 @@ export default function ProjectCard({
   content: React.ReactNode;
 }) {
   return (
-    <div className="text-2xl border-2 p-4 rounded-2xl">
-      <div className="pb-1">{title}</div>
+    <div className="border p-4 rounded-2xl">
+      <div className="text-2xl pb-1 font-semibold">{title}</div>
       <div className="text-lg">{content}</div>
     </div>
   );
