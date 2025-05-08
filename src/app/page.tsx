@@ -1,14 +1,12 @@
+import NavBar from "@/components/NavBar";
 import ProjectCard from "@/components/ProjectCard";
-import SocialVerticalBar from "@/components/SocialVerticalBar";
 
 export default function Home() {
   return (
     <main className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <div className="bg-gradient-to-r from-sky-500 to-sky-600 animate-gradient-x">
-        <div className="grid grid-cols-3 h-96 items-center">
-          <div>
-            <SocialVerticalBar />
-          </div>
+        <NavBar />
+        <div className="h-96 grid place-content-center">
           <div className="flex flex-col gap-3">
             <h1 className="text-6xl font-bold drop-shadow-sm">
               Lucas Anderson
@@ -23,7 +21,7 @@ export default function Home() {
         </div>
       </div>
       <div className="md:w-1/2 md:p-0 w-full p-5 mx-auto space-y-6">
-        <h1 className="text-3xl font-bold drop-shadow-sm pt-6 text-center">
+        <h1 className="text-3xl font-bold drop-shadow-sm pt-6 text-left">
           Recent Projects
         </h1>
         <ProjectCard
