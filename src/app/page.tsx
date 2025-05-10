@@ -23,29 +23,27 @@ export default function Home() {
 
       <div className="max-w-4xl md:p-0 w-full p-5 mx-auto space-y-6">
         <h1 className="text-3xl font-bold drop-shadow-sm pt-6 text-left">
-          Recent Projects
+          Projects
         </h1>
         <ProjectCard
           title="TV & Movie Discovery App"
           content={
             <ul className="list-disc ml-6 backdrop-blur-xl">
               <li>
-                Developed a scalable web app with an intuitive UI, simplifying
-                movie/TV discovery for users through personalized
-                recommendations, watchlists, and search tools.
+                Cut page-load times 50% with component streaming and SSR,
+                boosting Core Web Vitals.
               </li>
               <li>
-                Utilized PostgreSQL to store user profiles and watchlists,
-                implementing secure authentication with NextAuth.
+                Built a personalized discovery experience (recommendations,
+                watchlists, search) for TV & movies.
               </li>
               <li>
-                Optimized page load times by 50% using component streaming and
-                server-side rendering, enhancing UX.
+                Optimized query performance via Drizzle ORM and PostgreSQL
+                indexing, ensuring fast data retrieval under load.
               </li>
               <li>
-                Hosted on Vercel for rapid deployment and on DigitalOcean with
-                Docker and Nginx, ensuring scalability and reliability in
-                production.
+                Deployed secure OAuth (NextAuth) through CI/CD on Vercel for
+                zero‑downtime releases.
               </li>
             </ul>
           }
@@ -55,18 +53,12 @@ export default function Home() {
           content={
             <ul className="list-disc ml-6 backdrop-blur-xl">
               <li>
-                Created a responsive weather app with a seamless interface,
-                providing real-time forecasts and radar visuals through
-                integrated APIs.
+                Developed a responsive weather dashboard with real‑time
+                forecasts and radar (Visual Crossing, RainViewer).
               </li>
               <li>
-                Implemented a location search feature, enabling users to
-                personalize weather updates and receive accurate,
-                region-specific data.
-              </li>
-              <li>
-                Designed a dynamic forecast carousel to simplify navigation and
-                improve app usability.
+                Enhanced UX with Material UI and geolocation‑based search,
+                lifting average time‑on‑site.
               </li>
             </ul>
           }
