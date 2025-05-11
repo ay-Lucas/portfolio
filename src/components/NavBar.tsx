@@ -6,7 +6,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="sticky top-0 left-0 w-full z-50 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm shadow-md">
+    <nav className="sticky top-0 left-0 w-full z-50  backdrop-blur-sm shadow-md">
       <div className="max-w-4xl mx-auto flex justify-between items-center py-4 px-5 md:px-2">
         <Link href="/" className="text-2xl font-bold hover:text-blue-500">
           Lucas Anderson
