@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 import ProjectCard from "@/components/ProjectCard";
@@ -7,8 +8,9 @@ export default function Home() {
     <main className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavBar />
       <Hero />
-      <div className="max-w-4xl md:p-0 w-full p-5 mx-auto space-y-6">
-        <h1 className="text-3xl font-bold drop-shadow-sm pt-6 text-left">
+      <div className="max-w-4xl md:p-0 w-full p-5 mx-auto space-y-6 ">
+        <About />
+        <h1 className="text-3xl font-bold drop-shadow-sm pt-6 text-left  ">
           Projects
         </h1>
         <ProjectCard
