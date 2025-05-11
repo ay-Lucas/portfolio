@@ -1,26 +1,12 @@
+import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
     <main className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <div className="bg-gradient-to-r from-sky-500 to-sky-600 animate-gradient-x">
-        <NavBar />
-        <div className="h-96 grid place-content-center p-3">
-          <div className="flex flex-col gap-3">
-            <h1 className="text-6xl font-bold drop-shadow-sm">
-              Lucas Anderson
-            </h1>
-            <h2 className="text-3xl font-bold drop-shadow-sm">
-              Full Stack Web Developer
-            </h2>
-            <p className="text-xl font-bold">
-              I build seamless and feature rich applications.
-            </p>
-          </div>
-        </div>
-      </div>
-
+      <NavBar />
+      <Hero />
       <div className="max-w-4xl md:p-0 w-full p-5 mx-auto space-y-6">
         <h1 className="text-3xl font-bold drop-shadow-sm pt-6 text-left">
           Projects
