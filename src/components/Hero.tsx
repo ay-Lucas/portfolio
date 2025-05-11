@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="text-center py-24 bg-gray-50 dark:bg-gray-800">
+    <section className="text-center py-24">
       <h1 className="text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-sky-500 to-indigo-600 bg-[length:200%_200%] animate-gradient-x bg-clip-text text-transparent mb-4">
         Hi, I’m Lucas Anderson
       </h1>

@@ -1,10 +1,8 @@
 import Link from "next/link";
 
-export default function NavBar({ className }: { className?: string }) {
+export default function NavBar() {
   return (
-    <div
-      className={`shadow-xl w-full bg-black/100 backdrop-blur-xl items-center ${className}`}
-    >
+    <nav className="sticky top-0 left-0 w-full z-50 bg-white/50 dark:bg-gray-900/40 backdrop-blur-sm shadow-sm">
       <div className="max-w-4xl mx-auto flex justify-between items-center py-3 px-6 md:px-0">
         <Link href="/" className="text-2xl font-bold hover:text-blue-500">
           Lucas Anderson
@@ -25,6 +23,6 @@ export default function NavBar({ className }: { className?: string }) {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

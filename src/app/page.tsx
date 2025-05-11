@@ -6,13 +6,15 @@ import Socials from "@/components/Socials";
 
 export default function Home() {
   return (
-    <main className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <main className="min-h-screen font-[family-name:var(--font-geist-sans)] bg-gray-50 dark:bg-gray-800">
       <NavBar />
       <Hero />
-      <div className="max-w-4xl md:p-0 w-full p-5 mx-auto space-y-6 ">
-        <About />
-        <Socials />
-        <Projects />
+      <div className="w-screen bg-black">
+        <div className="max-w-4xl md:p-0 w-full p-5 mx-auto space-y-6">
+          <About />
+          <Socials />
+          <Projects />
+        </div>
       </div>
     </main>
   );
