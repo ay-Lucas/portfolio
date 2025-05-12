@@ -10,7 +10,7 @@ export default function Hero() {
       <a
         href="/resume.pdf"
         target="_blank"
-        className="inline-block px-6 py-3 border-2 border-gray-900 dark:border-gray-100 rounded-full text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+        className="inline-block px-6 py-3 border-2 border-gray-900 dark:border-gray-100 rounded-full text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
       >
         Download Résumé
       </a>

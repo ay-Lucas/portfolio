@@ -14,11 +14,11 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-sm bg-white/80 dark:bg-black/80 transition-colors duration-300 shadow">
+    <nav className="sticky top-0 z-50 backdrop-blur-sm bg-white/80 dark:bg-black/80 shadow">
       <div className="max-w-4xl mx-auto flex items-center justify-between px-5 md:px-2 py-4">
         <Link
           href="/"
-          className="text-2xl font-bold hover:text-primary-light dark:hover:text-primary-dark transition"
+          className="text-2xl font-bold hover:text-primary-light dark:hover:text-primary-dark"
         >
           Lucas Anderson
         </Link>
@@ -30,7 +30,7 @@ export default function NavBar() {
               {...(external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="hover:text-primary-light dark:hover:text-primary-dark transition"
+              className="hover:text-primary-light dark:hover:text-primary-dark"
             >
               {label}
             </Link>
@@ -40,7 +40,7 @@ export default function NavBar() {
         <button
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
-          className="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+          className="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700"
         >
           {open ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
         </button>
@@ -57,7 +57,7 @@ export default function NavBar() {
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
                 onClick={() => setOpen(false)}
-                className="hover:text-primary-light dark:hover:text-primary-dark transition"
+                className="hover:text-primary-light dark:hover:text-primary-dark"
               >
                 {label}
               </Link>

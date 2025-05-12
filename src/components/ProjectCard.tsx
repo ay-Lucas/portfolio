@@ -16,7 +16,7 @@ export default function ProjectCard({
   codeUrl,
 }: ProjectCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-600 p-6 rounded-2xl shadow-lg ring-1 ring-gray-500 transition duration-150 hover:scale-102">
+    <div className="bg-white dark:bg-gray-600 p-6 rounded-2xl shadow-lg ring-1 ring-gray-500 duration-150 hover:scale-102">
       <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
         {title}
       </h3>

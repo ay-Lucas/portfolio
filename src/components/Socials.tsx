@@ -13,7 +13,7 @@ export default function Socials() {
           href={s.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-500 transition"
+          className="hover:text-blue-500"
         >
           {s.icon}
         </a>
