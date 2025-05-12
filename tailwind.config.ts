@@ -6,15 +6,27 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       scale: {
         "102": "1.02",
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          light: "#4f46e5",
+          dark: "#818cf8",
+        },
+        background: {
+          light: "#ffffff",
+          dark: "#0a0a0a",
+        },
+        foreground: {
+          light: "#171717",
+          dark: "#ededed",
+        },
       },
+
       animation: {
         "gradient-x": "gradient-x 8s ease infinite",
         "gradient-y": "gradient-y 8s ease infinite",

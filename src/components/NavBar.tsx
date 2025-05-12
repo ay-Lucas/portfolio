@@ -2,16 +2,17 @@
 import Link from "next/link";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import ThemeToggle from "./ThemeToggle";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="sticky top-0 left-0 w-full z-50  backdrop-blur-sm shadow-md">
+    <nav className="sticky top-0 left-0 w-full z-50  backdrop-blur-sm shadow-md text-black dark:text-white">
       <div className="max-w-4xl mx-auto flex justify-between items-center py-4 px-5 md:px-2">
         <Link href="/" className="text-2xl font-bold hover:text-blue-500">
           Lucas Anderson
         </Link>
-        <div className="hidden md:flex space-x-6 text-lg">
+        <div className="hidden md:flex space-x-6 text-lg items-center">
           <Link href="#about" className="hover:text-blue-500">
             About
           </Link>
@@ -25,6 +26,7 @@ export default function NavBar() {
           >
             Résumé
           </Link>
+          <ThemeToggle />
         </div>
         <button
           className="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
@@ -59,6 +61,7 @@ export default function NavBar() {
             >
               Résumé
             </Link>
+            <ThemeToggle />
           </div>
         </div>
       )}
