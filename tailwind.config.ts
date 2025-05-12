@@ -28,9 +28,9 @@ export default {
       },
 
       animation: {
-        "gradient-x": "gradient-x 8s ease infinite",
-        "gradient-y": "gradient-y 8s ease infinite",
-        "gradient-xy": "gradient-xy 8s ease infinite",
+        "gradient-x": "gradient-x 4s ease infinite",
+        "gradient-y": "gradient-y 4s ease infinite",
+        "gradient-xy": "gradient-xy 4s ease infinite",
       },
       keyframes: {
         "gradient-y": {
