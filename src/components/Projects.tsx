@@ -20,35 +20,35 @@ export default function Projects() {
       ],
       images: [
         {
-          src: "/screenshots/glimpse/glimpse_homepage.png",
+          src: "/screenshots/glimpse/glimpse_homepage.webp",
           alt: "Glimpse — homepage",
         },
         {
-          src: "/screenshots/glimpse/glimpse_landing_page.png",
+          src: "/screenshots/glimpse/glimpse_landing_page.webp",
           alt: "Glimpse — landing page",
         },
         {
-          src: "/screenshots/glimpse/glimpse_mood_match.png",
+          src: "/screenshots/glimpse/glimpse_mood_match.webp",
           alt: "Glimpse — mood match view",
         },
         {
-          src: "/screenshots/glimpse/glimpse_search_demo.png",
+          src: "/screenshots/glimpse/glimpse_search_demo.webp",
           alt: "Glimpse — search results",
         },
         {
-          src: "/screenshots/glimpse/glimpse_signin.png",
+          src: "/screenshots/glimpse/glimpse_signin.webp",
           alt: "Glimpse — sign in",
         },
         {
-          src: "/screenshots/glimpse/glimpse_tv_page_dropdown.png",
+          src: "/screenshots/glimpse/glimpse_tv_page_dropdown.webp",
           alt: "Glimpse — TV page details",
         },
         {
-          src: "/screenshots/glimpse/glimpse_watchlists.png",
+          src: "/screenshots/glimpse/glimpse_watchlists.webp",
           alt: "Glimpse — watchlists",
         },
         {
-          src: "/screenshots/glimpse/glimpse_mobile_homepage.png",
+          src: "/screenshots/glimpse/glimpse_mobile_homepage.webp",
           alt: "Glimpse — mobile homepage",
         },
       ],
@@ -69,35 +69,35 @@ export default function Projects() {
       ],
       images: [
         {
-          src: "/screenshots/weather/weather_top.png",
+          src: "/screenshots/weather/weather_top.webp",
           alt: "Weather App — top",
         },
         {
-          src: "/screenshots/weather/weather_search_dropdown.png",
+          src: "/screenshots/weather/weather_search_dropdown.webp",
           alt: "Weather App — search dropdown",
         },
         {
-          src: "/screenshots/weather/weather_bottom.png",
+          src: "/screenshots/weather/weather_bottom.webp",
           alt: "Weather App — bottom",
         },
         {
-          src: "/screenshots/weather/weather_daily_accordion.png",
+          src: "/screenshots/weather/weather_daily_accordion.webp",
           alt: "Weather App — daily accordion opened",
         },
         {
-          src: "/screenshots/weather/weather_mobile_top.png",
+          src: "/screenshots/weather/weather_mobile_top.webp",
           alt: "Weather App — mobile top",
         },
         {
-          src: "/screenshots/weather/weather_mobile_radar.png",
+          src: "/screenshots/weather/weather_mobile_radar.webp",
           alt: "Weather App — mobile radar",
         },
         {
-          src: "/screenshots/weather/weather_mobile_daily.png",
+          src: "/screenshots/weather/weather_mobile_daily.webp",
           alt: "Weather App — mobile daily",
         },
         {
-          src: "/screenshots/weather/weather_mobile_daily_accordion.png",
+          src: "/screenshots/weather/weather_mobile_daily_accordion.webp",
           alt: "Weather App — mobile daily accordion",
         },
       ],
