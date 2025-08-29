@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import ProjectCarousel from "./ProjectCarousel";
+import ProjectCarousel, { CarouselImage } from "./ProjectCarousel";
 
 interface ProjectCardProps {
   title: string;
@@ -11,8 +11,8 @@ interface ProjectCardProps {
   codeUrl?: string;
   highlights?: string[];
   challenges?: string[];
-  image?: { src: string; alt: string };
-  images?: { src: string; alt: string }[];
+  image?: CarouselImage;
+  images?: CarouselImage[];
 }
 
 export default function ProjectCard({

@@ -19,13 +19,38 @@ export default function Projects() {
         "Slow LCP → Server Components + ISR + LQIP/CDN → ~75% faster loads",
       ],
       images: [
-        { src: "/screenshots/glimpse/glimpse_homepage.png", alt: "Glimpse — homepage" },
-        { src: "/screenshots/glimpse/glimpse_landing_page.png", alt: "Glimpse — landing page" },
-        { src: "/screenshots/glimpse/glimpse_mood_match.png", alt: "Glimpse — mood match view" },
-        { src: "/screenshots/glimpse/glimpse_search_demo.png", alt: "Glimpse — search results" },
-        { src: "/screenshots/glimpse/glimpse_signin.png", alt: "Glimpse — sign in" },
-        { src: "/screenshots/glimpse/glimpse_tv_page_dropdown.png", alt: "Glimpse — TV page details" },
-        { src: "/screenshots/glimpse/glimpse_watchlists.png", alt: "Glimpse — watchlists" },
+        {
+          src: "/screenshots/glimpse/glimpse_homepage.png",
+          alt: "Glimpse — homepage",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_landing_page.png",
+          alt: "Glimpse — landing page",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_mood_match.png",
+          alt: "Glimpse — mood match view",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_search_demo.png",
+          alt: "Glimpse — search results",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_signin.png",
+          alt: "Glimpse — sign in",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_tv_page_dropdown.png",
+          alt: "Glimpse — TV page details",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_watchlists.png",
+          alt: "Glimpse — watchlists",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_mobile_homepage.png",
+          alt: "Glimpse — mobile homepage",
+        },
       ],
     },
     {
@@ -41,6 +66,40 @@ export default function Projects() {
       ],
       challenges: [
         "Choppy map tiles → memoized layers + debounced renders → smooth pan/zoom",
+      ],
+      images: [
+        {
+          src: "/screenshots/weather/weather_top.png",
+          alt: "Weather App — top",
+        },
+        {
+          src: "/screenshots/weather/weather_search_dropdown.png",
+          alt: "Weather App — search dropdown",
+        },
+        {
+          src: "/screenshots/weather/weather_bottom.png",
+          alt: "Weather App — bottom",
+        },
+        {
+          src: "/screenshots/weather/weather_daily_accordion.png",
+          alt: "Weather App — daily accordion opened",
+        },
+        {
+          src: "/screenshots/weather/weather_mobile_top.png",
+          alt: "Weather App — mobile top",
+        },
+        {
+          src: "/screenshots/weather/weather_mobile_radar.png",
+          alt: "Weather App — mobile radar",
+        },
+        {
+          src: "/screenshots/weather/weather_mobile_daily.png",
+          alt: "Weather App — mobile daily",
+        },
+        {
+          src: "/screenshots/weather/weather_mobile_daily_accordion.png",
+          alt: "Weather App — mobile daily accordion",
+        },
       ],
     },
     {
