@@ -38,8 +38,13 @@ export default function ProjectCarousel({
                 src={img.src}
                 alt={img.alt}
                 fill
+                quality={100}
                 sizes="(min-width: 1024px) 600px, (min-width: 768px) 70vw, 100vw"
-                className={img.fit === "cover" ? "object-cover object-top" : "object-contain"}
+                className={
+                  img.fit === "cover"
+                    ? "object-cover object-top"
+                    : "object-contain"
+                }
                 priority={false}
               />
             </div>
