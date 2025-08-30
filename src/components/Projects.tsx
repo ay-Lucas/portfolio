@@ -25,8 +25,12 @@ export default function Projects() {
           alt: "Glimpse — homepage",
         },
         {
-          src: "/screenshots/glimpse/glimpse_landing_page.webp",
-          alt: "Glimpse — landing page",
+          src: "/screenshots/glimpse/glimpse_title.webp",
+          alt: "Glimpse — title",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_person.webp",
+          alt: "Glimpse — person",
         },
         {
           src: "/screenshots/glimpse/glimpse_mood_match.webp",
@@ -35,6 +39,10 @@ export default function Projects() {
         {
           src: "/screenshots/glimpse/glimpse_search_demo.webp",
           alt: "Glimpse — search results",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_landing_page.webp",
+          alt: "Glimpse — landing page",
         },
         {
           src: "/screenshots/glimpse/glimpse_signin.webp",
@@ -51,6 +59,18 @@ export default function Projects() {
         {
           src: "/screenshots/glimpse/glimpse_mobile_homepage.webp",
           alt: "Glimpse — mobile homepage",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_providers_details.webp",
+          alt: "Glimpse — providers details",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_season.webp",
+          alt: "Glimpse — season",
+        },
+        {
+          src: "/screenshots/glimpse/glimpse_seasons.webp",
+          alt: "Glimpse — seasons",
         },
       ],
     },
