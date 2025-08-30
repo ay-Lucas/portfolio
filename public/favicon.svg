@@ -6,7 +6,6 @@
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="12" fill="url(#g)"/>
-  <text x="50%" y="54%" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="34" fill="white">LA</text>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="34" fill="white">LA</text>
   <title>Lucas Anderson</title>
 </svg>
-
