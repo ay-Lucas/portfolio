@@ -15,6 +15,7 @@ interface ProjectCardProps {
   codeUrl?: string;
   liveLabel?: string;
   codeLabel?: string;
+  dates?: string; // e.g., "2025 – Present" or "Jan–May 2024"
   highlights?: string[];
   challenges?: string[];
   image?: CarouselImage;
@@ -30,6 +31,7 @@ export default function ProjectCard({
   codeUrl,
   liveLabel,
   codeLabel,
+  dates,
   highlights,
   challenges,
   image,
@@ -61,6 +63,11 @@ export default function ProjectCard({
       <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
         {title}
       </h3>
+      {dates && (
+        <div className="mb-3 text-sm text-zinc-600 dark:text-zinc-400">
+          {dates}
+        </div>
+      )}
       <p className="mb-4 text-zinc-700 dark:text-zinc-300">{description}</p>
       {highlights && highlights.length > 0 && (
         <div className="mb-4">

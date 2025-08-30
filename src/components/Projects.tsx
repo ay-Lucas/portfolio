@@ -6,6 +6,7 @@ export default function Projects() {
       title: "PhysiqueIQ — AI Physique Analyzer",
       description:
         "Estimates body-part measurements and symmetry from standardized photos, visualizes change over time, and offers simple periodized templates. On-device computer vision with in-house pose/measurement models (in training)",
+      dates: "Aug 2025 – Present",
       tech: [
         "React Native (Expo)",
         "TypeScript",
@@ -38,6 +39,7 @@ export default function Projects() {
       title: "TV & Movie Discovery App",
       description:
         "AI-assisted TV & movie discovery with streaming availability and ultra-fast detail pages.",
+      dates: "July 2024 – Aug 2025",
       tech: ["TypeScript", "React", "Next.js", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://glimpse.lucasanderson.dev",
       codeUrl: "https://github.com/ay-lucas/glimpse",
@@ -89,6 +91,7 @@ export default function Projects() {
       title: "React Weather App",
       description:
         "Real-time weather dashboard with radar and geolocation search.",
+      dates: "June 2023 – Aug 2023",
       tech: ["JavaScript", "React", "Tailwind CSS"],
       liveUrl: "https://weather.lucasanderson.dev",
       codeUrl: "https://github.com/ay-lucas/weather-app",
@@ -138,6 +141,7 @@ export default function Projects() {
       title: "GloboLingo – Language Learning App",
       description:
         "Desktop app that teaches vocabulary with natural TTS and testable modules.",
+      dates: "Aug 2024 - Dec 2024",
       tech: ["Java", "JavaFX", "AWS Polly", "JUnit"],
       codeUrl: "https://github.com/ay-Lucas/Globo-Lingo",
       highlights: [
@@ -150,6 +154,7 @@ export default function Projects() {
       title: "Google Calendar CLI",
       description:
         "Implemented OAuth 2.0 and REST calls to manage calendar events from the terminal.",
+      dates: "June 2023",
       tech: ["Node.js", "Express"],
       codeUrl: "https://github.com/ay-Lucas/google-calendar-cli",
       highlights: [
@@ -162,6 +167,7 @@ export default function Projects() {
       title: "Weather Channel CLI",
       description:
         "Go CLI fetching hourly/daily forecasts from undocumented endpoints",
+      dates: "Nov 2023",
       tech: ["Go", "Colly"],
       codeUrl: "https://github.com/ay-Lucas/weather-channel-cli",
       highlights: [
