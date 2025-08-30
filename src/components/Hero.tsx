@@ -5,7 +5,7 @@ export default function Hero() {
         Hi, I’m Lucas Anderson
       </h1>
       <p className="text-lg md:text-[1.1rem] leading-7 md:leading-8 text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-        New Grad SWE (May '26) • React/Next.js, TypeScript, Node, Postgres
+        New Grad SWE (May &#39;26) • React/Next.js, TypeScript, Node, Postgres
       </p>
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <a

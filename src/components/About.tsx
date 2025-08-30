@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" className="py-20 md:py-24">
       <h2 className="text-3xl md:text-4xl font-semibold mb-2">About Me</h2>
       <div className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
-        Columbia, SC • CS '26, University of South Carolina • New‑grad May '26 •
+        Columbia, SC • CS &#39;26, University of South Carolina • New‑grad May &#39;26 •
         Open to part‑time now • React/Next.js, TypeScript, Node, Postgres •
         Vercel/CI/CD
       </div>
