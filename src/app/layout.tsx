@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
+import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lucasanderson.dev"),
@@ -31,6 +32,8 @@ export const metadata: Metadata = {
   },
 };
 
+const inter = Inter({ subsets: ["latin"], display: "swap" });
+
 export default function RootLayout({
   children,
 }: {
@@ -38,7 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={inter.className}>
+        {/* Skip link for accessibility */}
+        <a href="#content" className="skip-link">Skip to content</a>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <script
             type="application/ld+json"

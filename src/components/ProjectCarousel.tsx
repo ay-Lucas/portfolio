@@ -11,7 +11,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { X } from "lucide-react";
-
 // Swiper styles (tree-shaken by Next when unused)
 import "swiper/css";
 import "swiper/css/navigation";
@@ -49,8 +48,9 @@ export default function ProjectCarousel({
   return (
     <div className="mb-4 relative w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-700">
       <Swiper
-        modules={[Navigation, Pagination, A11y, Keyboard]}
+        modules={[Navigation, Pagination, A11y, Keyboard, Mousewheel]}
         navigation
+        mousewheel
         pagination={{ clickable: true }}
         keyboard={{ enabled: true }}
         spaceBetween={8}
@@ -99,8 +99,7 @@ export default function ProjectCarousel({
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                // className="px-3 py-1.5 rounded-md bg-white/90 hover:bg-white text-black text-sm font-medium"
-                className="rounded-md hover:text-gray-400 transition-colors text-white text-sm font-medium"
+                className="hover:text-gray-300 transition-colors text-white"
                 aria-label="Close full screen"
               >
                 <X size={40} />

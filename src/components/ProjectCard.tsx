@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import ProjectCarousel, { CarouselImage } from "./ProjectCarousel";
+import dynamic from "next/dynamic";
+import type { CarouselImage } from "./ProjectCarousel";
+const ProjectCarousel = dynamic(() => import("./ProjectCarousel"), { ssr: false });
 
 interface ProjectCardProps {
   title: string;
@@ -27,12 +29,12 @@ export default function ProjectCard({
   images,
 }: ProjectCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-600 p-6 rounded-2xl shadow-lg ring-1 ring-gray-500 duration-150 hover:scale-102">
+    <div className="bg-white dark:bg-zinc-900 p-6 md:p-7 rounded-2xl shadow-sm border border-zinc-200/70 dark:border-zinc-800 transition hover:-translate-y-0.5 hover:shadow-lg">
       {Array.isArray(images) && images.length > 0 ? (
         <ProjectCarousel images={images} />
       ) : (
         image && (
-          <div className="mb-4 relative w-full overflow-hidden rounded-xl aspect-[16/9] bg-gray-100 dark:bg-gray-700">
+          <div className="mb-4 relative w-full overflow-hidden rounded-xl aspect-[16/9] bg-gray-100 dark:bg-gray-800">
             <Image
               src={image.src}
               alt={image.alt}
@@ -46,13 +48,13 @@ export default function ProjectCard({
       <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
         {title}
       </h3>
-      <p className="mb-4 text-gray-700 dark:text-gray-300">{description}</p>
+      <p className="mb-4 text-zinc-700 dark:text-zinc-300">{description}</p>
       {highlights && highlights.length > 0 && (
         <div className="mb-4">
           <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-200 mb-2">
             Highlights
           </h4>
-          <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-100">
+          <ul className="list-disc list-inside space-y-1 text-zinc-700 dark:text-zinc-100">
             {highlights.map((h) => (
               <li key={h}>{h}</li>
             ))}
@@ -64,7 +66,7 @@ export default function ProjectCard({
           <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-200 mb-2">
             Challenges
           </h4>
-          <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-100">
+          <ul className="list-disc list-inside space-y-1 text-zinc-700 dark:text-zinc-100">
             {challenges.map((h) => (
               <li key={h}>{h}</li>
             ))}
@@ -75,7 +77,7 @@ export default function ProjectCard({
         {tech.map((t) => (
           <span
             key={t}
-            className="text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
+            className="text-sm bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200/60 dark:border-zinc-700 px-3 py-1 rounded-full"
           >
             {t}
           </span>
