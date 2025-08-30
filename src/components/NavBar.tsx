@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import ThemeToggle from "@/components/ThemeToggle";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "#about", label: "About" },
@@ -42,9 +43,11 @@ export default function NavBar() {
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-6 py-4">
         <Link
           href="/"
-          className="text-2xl font-bold hover:text-primary-light dark:hover:text-primary-dark"
+          className="flex items-center gap-2 text-2xl font-bold hover:text-primary-light dark:hover:text-primary-dark"
+          aria-label="Lucas Anderson home"
         >
-          Lucas Anderson
+          <Image src="/favicon.svg" width={32} height={32} alt="Logo" />
+          <span>Lucas Anderson</span>
         </Link>
         <div className="hidden md:flex items-center space-x-6 text-lg">
           {NAV_LINKS.map(({ href, label, external }) => (
@@ -54,7 +57,11 @@ export default function NavBar() {
               {...(external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              aria-current={!external && active && href === `#${active}` ? "page" : undefined}
+              aria-current={
+                !external && active && href === `#${active}`
+                  ? "page"
+                  : undefined
+              }
               className={`hover:text-primary-light dark:hover:text-primary-dark ${
                 !external && active && href === `#${active}`
                   ? "text-primary-light dark:text-primary-dark"
@@ -88,7 +95,11 @@ export default function NavBar() {
                   ? { target: "_blank", rel: "noopener noreferrer" }
                   : {})}
                 onClick={() => setOpen(false)}
-                aria-current={!external && active && href === `#${active}` ? "page" : undefined}
+                aria-current={
+                  !external && active && href === `#${active}`
+                    ? "page"
+                    : undefined
+                }
                 className={`hover:text-primary-light dark:hover:text-primary-dark ${
                   !external && active && href === `#${active}`
                     ? "text-primary-light dark:text-primary-dark"
