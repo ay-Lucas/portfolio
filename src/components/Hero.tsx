@@ -9,17 +9,19 @@ export default function Hero() {
       </p>
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <a
-          href="mailto:lucas@lucasanderson.dev"
+          href="mailto:lucas@lucasanderson.dev?subject=New-grad%20Software%20Engineer%20(May%202026)%20%E2%80%94%20Lucas%20Anderson"
+          aria-label="Email Lucas about new‑grad software engineer roles (May 2026)"
           className="inline-block px-6 py-3 rounded-full text-white bg-indigo-600 hover:bg-indigo-700"
         >
-          Open to Summer ’25
+          New‑grad ’26 — contact me
         </a>
         <a
           href="/resume.pdf"
           target="_blank"
+          aria-label="Download resume (New‑grad ’26)"
           className="inline-block px-6 py-3 border border-zinc-300 dark:border-zinc-700 rounded-full text-gray-900 dark:text-gray-100 hover:bg-zinc-100 dark:hover:bg-zinc-800"
         >
-          Download Résumé
+          Download resume (New‑grad ’26)
         </a>
       </div>
     </div>

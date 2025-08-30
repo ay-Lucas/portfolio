@@ -7,7 +7,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "/resume.pdf", label: "Résumé", external: true },
+  { href: "/resume.pdf", label: "Resume", external: true },
 ];
 
 export default function NavBar() {
