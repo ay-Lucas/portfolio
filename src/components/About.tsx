@@ -3,8 +3,9 @@ export default function About() {
     <section id="about" className="py-20 md:py-24">
       <h2 className="text-3xl md:text-4xl font-semibold mb-2">About Me</h2>
       <div className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
-        New‑grad May ’26 • Open to part‑time now • React/Next.js, TypeScript,
-        Node, Postgres • Vercel/CI/CD
+        Columbia, SC • CS '26, University of South Carolina • New‑grad May '26 •
+        Open to part‑time now • React/Next.js, TypeScript, Node, Postgres •
+        Vercel/CI/CD
       </div>
       <p className="mb-4 text-lg leading-7 md:text-[1.1rem] md:leading-8 max-w-prose md:max-w-none">
         I ship fast, reliable web apps end to end. Recently, I cut page load
