@@ -1,42 +1,48 @@
-# Lucas Anderson — Software Developer
+# Lucas Anderson — New Grad SWE (May ’26)
 
-[🌐 Live Portfolio](https://lucasanderson.dev)
+[Live Portfolio](https://lucasanderson.dev)
 
-Hey there! I’m Lucas, a junior Computer Science student (’26) who loves building snappy and reliable web apps. This is where I share my latest projects and what I’m learning along the way.
+Columbia, SC • CS ’26 at the University of South Carolina. I build fast, reliable web apps end‑to‑end with React/Next.js, TypeScript, Node/Postgres. Open to New Grad Software Engineer roles (May 2026) and part‑time work during the school year.
 
-## What I Do
+## Highlights
 
-I work on full-stack applications, from crafting sleek UIs with React and Tailwind CSS to setting up back-ends with Node.js and PostgreSQL. I’m passionate about performant and maintainable code.
+- **Performance:** ~75% faster loads and ~90% fewer external API calls on a TV/Movie discovery app (RSC, ISR, Redis, image optimizations).
+- **UX:** Swiper carousel with fullscreen lightbox, smooth anchor scrolling, dark mode, reduced‑motion support.
+- **SEO:** Expanded metadata (Open Graph + Twitter), dynamic OG images, sitemap/robots, JSON‑LD.
+- **A11y:** Skip link, focus‑visible styles, accessible nav and external links.
 
-## Skills
+## Projects
 
-- **Front-end:** TypeScript, React, Next.js, Tailwind CSS
-- **Back-end:** Node.js, Express, PostgreSQL, Drizzle ORM
-- **DevOps:** Vercel, Docker, CI/CD
-- **Workflow:** Git, Agile/Scrum, AWS
+- **Glimpse — TV/Movie Discovery:** AI recommendations by mood/vibe, watchlists, streaming availability.
+  - Live: https://glimpse.lucasanderson.dev • Code: https://github.com/ay-lucas/glimpse
+- **Weather App:** Real‑time forecasts with interactive radar and geolocation search.
+  - Live: https://weather.lucasanderson.dev • Code: https://github.com/ay-lucas/weather-app
+- **GloboLingo — Language Learning:** AWS Polly TTS; 100% unit test coverage (JUnit).
+  - Code: https://github.com/ay-Lucas/Globo-Lingo
+- **PhysiqueIQ (In Progress):** React Native capstone; designing on‑device CV + training in‑house models. Join the waitlist from the site.
 
-## Featured Projects
+## Stack
 
-### Glimpse — TV & Movie Discovery App
+- **Front‑end:** React, Next.js, TypeScript, Tailwind CSS, Swiper
+- **Back‑end:** Node.js, Express, PostgreSQL, Drizzle ORM, Supabase (Auth/RLS)
+- **Infra/Tools:** Vercel, Redis, CI/CD, ESLint, TypeScript, Playwright (planned)
 
-Built a personalized experience with recommendations, watchlists, and search. Optimized load times by 50%.
-[Live Demo](https://glimpse.lucasanderson.dev) • [Source Code](https://github.com/ay-lucas/glimpse)
+## Local Development
 
-### React Weather App
+Prereqs: Node 18+.
 
-An interactive dashboard with real-time forecasts and radar overlays.
-[Live Demo](https://weather.lucasanderson.dev) • [Source Code](https://github.com/ay-lucas/weather-app)
+```bash
+npm install
+npm run dev
+# open http://localhost:3000
+```
 
-### GloboLingo — Language Learning App
+## Contact
 
-A JavaFX desktop app featuring AWS Polly text-to-speech and comprehensive JUnit tests for reliability.
-[Source Code](https://github.com/ay-Lucas/Globo-Lingo)
-
-...and more to explore on the site!
-
-## Let’s Connect
-
-- 🔗 [https://linkedin.com/in/ay-Lucas](https://linkedin.com/in/ay-Lucas)
-- 🐙 [https://github.com/ay-Lucas](https://github.com/ay-Lucas)
+- Portfolio: https://lucasanderson.dev
+- Resume: https://lucasanderson.dev/resume.pdf
+- Email: lucas@lucasanderson.dev
+- LinkedIn: https://linkedin.com/in/lucas-c-anderson
+- GitHub: https://github.com/ay-Lucas
 
 © 2025 Lucas Anderson
