@@ -5,7 +5,7 @@ export default function Hero() {
         Hi, I’m Lucas Anderson
       </h1>
       <p className="text-lg md:text-[1.1rem] leading-7 md:leading-8 text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-        BS in Computer Science ’26 • Building fast, scalable web apps
+        New Grad SWE (May ’26) • React/Next.js, TypeScript, Node, Postgres
       </p>
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <a
@@ -13,7 +13,7 @@ export default function Hero() {
           aria-label="Email Lucas about new‑grad software engineer roles (May 2026)"
           className="inline-block px-6 py-3 rounded-full text-white bg-indigo-600 hover:bg-indigo-700"
         >
-          New‑grad ’26 — contact me
+          Contact me
         </a>
         <a
           href="/resume.pdf"
@@ -21,7 +21,15 @@ export default function Hero() {
           aria-label="Download resume (New‑grad ’26)"
           className="inline-block px-6 py-3 border border-zinc-300 dark:border-zinc-700 rounded-full text-gray-900 dark:text-gray-100 hover:bg-zinc-100 dark:hover:bg-zinc-800"
         >
-          Download resume (New‑grad ’26)
+          Download resume
+        </a>
+      </div>
+      <div className="mt-4">
+        <a
+          href="#projects"
+          className="text-sm text-zinc-600 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 underline-offset-4 hover:underline"
+        >
+          View projects ↓
         </a>
       </div>
     </div>

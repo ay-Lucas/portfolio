@@ -195,7 +195,7 @@ export default function Projects() {
     },
   ];
   return (
-    <section id="projects" className="py-20 md:py-24">
+    <section id="projects" className="py-20 md:py-24 border-t border-zinc-200/60 dark:border-white/10">
       <h2 className="text-3xl md:text-4xl font-semibold mb-10 md:mb-12">
         Projects
       </h2>
