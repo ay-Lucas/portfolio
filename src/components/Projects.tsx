@@ -3,39 +3,6 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   const projects = [
     {
-      title: "PhysiqueIQ — AI Physique Analyzer",
-      description:
-        "Estimates body-part measurements and symmetry from standardized photos, visualizes change over time, and offers simple periodized templates. On-device computer vision with in-house pose/measurement models (in training)",
-      dates: "Aug 2025 – Present",
-      tech: [
-        "React Native (Expo)",
-        "TypeScript",
-        "Express.js",
-        "Supabase (Auth, Postgres, RLS)",
-        "VisionCamera (frame processors)",
-        "TensorFlow Lite / MediaPipe",
-        "PyTorch (model training)",
-        "ONNX / Core ML conversion",
-      ],
-      liveUrl:
-        "mailto:join@physiqueiq.app?subject=PhysiqueIQ%20Waitlist&body=Name:%0APlatform%20(iOS/Android):%0AFitness%20goal%20(optional):",
-      liveLabel: "Join the waitlist",
-      highlights: [
-        "Custom vision models for landmarks, silhouette, and tape-measure proxies (on-device)",
-        "Pose guidance and alignment overlays for repeatable progress photos",
-        "Timelines, body-part trend charts, and symmetry scores",
-        "Goal-based hypertrophy templates & specialization cycles (export to Hevy/CSV/PDF)",
-        "Weekly insights that surface changes and simple focus cues",
-      ],
-      challenges: [
-        "Dataset collection/labeling for relaxed poses across lighting, distances, and physiques",
-        "Model compression/quantization and cross-device calibration for reliable cm estimates",
-        "Pose standardization UX to minimize measurement variance between sessions",
-        "Subscriptions, entitlements, and strict image privacy guarantees",
-      ],
-      badge: "In progress",
-    },
-    {
       title: "TV & Movie Discovery App",
       description:
         "AI-assisted TV & movie discovery with streaming availability and ultra-fast detail pages.",
@@ -86,6 +53,36 @@ export default function Projects() {
           alt: "Glimpse — mobile homepage",
         },
       ],
+    },
+    {
+      title: "PhysiqueIQ — AI Physique Analyzer",
+      description:
+        "Estimates body-part measurements and symmetry from standardized photos, visualizes change over time, and offers simple periodized templates. On-device computer vision with in-house pose/measurement models (in training)",
+      dates: "Aug 2025 – Present",
+      tech: [
+        "React Native (Expo)",
+        "TypeScript",
+        "Express.js",
+        "Supabase (Auth, Postgres, RLS)",
+        "VisionCamera (frame processors)",
+        "TensorFlow Lite / MediaPipe",
+        "PyTorch (model training)",
+        "ONNX / Core ML conversion",
+      ],
+      liveUrl:
+        "mailto:join@physiqueiq.app?subject=PhysiqueIQ%20Waitlist&body=Name:%0APlatform%20(iOS/Android):%0AFitness%20goal%20(optional):",
+      liveLabel: "Join the waitlist",
+      highlights: [
+        "Custom vision models for landmarks, silhouette, and tape-measure proxies (on-device)",
+        "Timelines, body-part trend charts, and symmetry scores",
+        "Hypertrophy templates & specialization cycles (export to Hevy/CSV/PDF)",
+      ],
+      challenges: [
+        "Dataset collection/labeling for relaxed poses across lighting, distances, and physiques",
+        "UX for pose standardization",
+        "Privacy and on-device processing",
+      ],
+      badge: "In progress",
     },
     {
       title: "React Weather App",
@@ -151,19 +148,6 @@ export default function Projects() {
       ],
     },
     {
-      title: "Google Calendar CLI",
-      description:
-        "Implemented OAuth 2.0 and REST calls to manage calendar events from the terminal.",
-      dates: "June 2023",
-      tech: ["Node.js", "Express"],
-      codeUrl: "https://github.com/ay-Lucas/google-calendar-cli",
-      highlights: [
-        "OAuth 2.0 authentication",
-        "Create, list, and delete events",
-        "Configurable calendars and profiles",
-      ],
-    },
-    {
       title: "Weather Channel CLI",
       description:
         "Go CLI fetching hourly/daily forecasts from undocumented endpoints",
@@ -174,6 +158,19 @@ export default function Projects() {
         "Reverse-engineered Weather.com endpoints",
         "Resilient scraping (retries/backoff)",
         "Structured CLI output",
+      ],
+    },
+    {
+      title: "Google Calendar CLI",
+      description:
+        "Implemented OAuth 2.0 and REST calls to manage calendar events from the terminal.",
+      dates: "Aug 2023",
+      tech: ["Node.js", "Express"],
+      codeUrl: "https://github.com/ay-Lucas/google-calendar-cli",
+      highlights: [
+        "OAuth 2.0 authentication",
+        "Create, list, and delete events",
+        "Configurable calendars and profiles",
       ],
     },
   ];
