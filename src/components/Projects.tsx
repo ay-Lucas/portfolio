@@ -3,6 +3,38 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   const projects = [
     {
+      title: "PhysiqueIQ — AI Physique Analyzer",
+      description:
+        "Estimates body-part measurements and symmetry from standardized photos, visualizes change over time, and offers simple periodized templates. On-device computer vision with in-house pose/measurement models (in training)",
+      tech: [
+        "React Native (Expo)",
+        "TypeScript",
+        "Express.js",
+        "Supabase (Auth, Postgres, RLS)",
+        "VisionCamera (frame processors)",
+        "TensorFlow Lite / MediaPipe",
+        "PyTorch (model training)",
+        "ONNX / Core ML conversion",
+      ],
+      liveUrl:
+        "mailto:join@physiqueiq.app?subject=PhysiqueIQ%20Waitlist&body=Name:%0APlatform%20(iOS/Android):%0AFitness%20goal%20(optional):",
+      liveLabel: "Join the waitlist",
+      highlights: [
+        "Custom vision models for landmarks, silhouette, and tape-measure proxies (on-device)",
+        "Pose guidance and alignment overlays for repeatable progress photos",
+        "Timelines, body-part trend charts, and symmetry scores",
+        "Goal-based hypertrophy templates & specialization cycles (export to Hevy/CSV/PDF)",
+        "Weekly insights that surface changes and simple focus cues",
+      ],
+      challenges: [
+        "Dataset collection/labeling for relaxed poses across lighting, distances, and physiques",
+        "Model compression/quantization and cross-device calibration for reliable cm estimates",
+        "Pose standardization UX to minimize measurement variance between sessions",
+        "Subscriptions, entitlements, and strict image privacy guarantees",
+      ],
+      badge: "In progress",
+    },
+    {
       title: "TV & Movie Discovery App",
       description:
         "AI-assisted TV & movie discovery with streaming availability and ultra-fast detail pages.",
@@ -148,6 +180,7 @@ export default function Projects() {
         className="grid gap-8 grid-cols-1 lg:grid-cols-2             
             [&>*:first-child]:col-span-2
 [&>*:nth-child(2)]:col-span-2
+[&>*:nth-child(3)]:col-span-2
 
 "
       >

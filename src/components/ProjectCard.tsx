@@ -3,7 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import type { CarouselImage } from "./ProjectCarousel";
-const ProjectCarousel = dynamic(() => import("./ProjectCarousel"), { ssr: false });
+const ProjectCarousel = dynamic(() => import("./ProjectCarousel"), {
+  ssr: false,
+});
 
 interface ProjectCardProps {
   title: string;
@@ -11,10 +13,13 @@ interface ProjectCardProps {
   tech: string[];
   liveUrl?: string;
   codeUrl?: string;
+  liveLabel?: string;
+  codeLabel?: string;
   highlights?: string[];
   challenges?: string[];
   image?: CarouselImage;
   images?: CarouselImage[];
+  badge?: string;
 }
 
 export default function ProjectCard({
@@ -23,13 +28,21 @@ export default function ProjectCard({
   tech,
   liveUrl,
   codeUrl,
+  liveLabel,
+  codeLabel,
   highlights,
   challenges,
   image,
   images,
+  badge,
 }: ProjectCardProps) {
   return (
-    <div className="bg-white dark:bg-zinc-900 p-6 md:p-7 rounded-2xl shadow-sm border border-zinc-200/70 dark:border-zinc-800 transition hover:-translate-y-0.5 hover:shadow-lg">
+    <div className="bg-white dark:bg-zinc-900 p-6 md:p-7 rounded-2xl shadow-sm border border-zinc-200/70 dark:border-zinc-800 transition hover:-translate-y-2 hover:shadow-lg">
+      {badge && (
+        <span className="inline-block mb-3 text-xs font-medium px-2 py-1 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
+          {badge}
+        </span>
+      )}
       {Array.isArray(images) && images.length > 0 ? (
         <ProjectCarousel images={images} />
       ) : (
@@ -90,7 +103,7 @@ export default function ProjectCard({
             target="_blank"
             className="text-blue-500 hover:underline"
           >
-            Live
+            {liveLabel ?? "Live"}
           </Link>
         )}
         {codeUrl && (
@@ -99,7 +112,7 @@ export default function ProjectCard({
             target="_blank"
             className="text-blue-500 hover:underline"
           >
-            Code
+            {codeLabel ?? "Code"}
           </Link>
         )}
       </div>
