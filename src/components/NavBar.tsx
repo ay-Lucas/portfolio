@@ -8,7 +8,11 @@ import Image from "next/image";
 const NAV_LINKS = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "/resume.pdf", label: "Resume", external: true },
+  {
+    href: "/Lucas_Anderson_FullStack_Resume_2026.pdf",
+    label: "Resume",
+    external: true,
+  },
 ];
 
 export default function NavBar() {

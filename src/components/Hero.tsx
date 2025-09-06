@@ -16,7 +16,7 @@ export default function Hero() {
           Contact me
         </a>
         <a
-          href="/resume.pdf"
+          href="/Lucas_Anderson_FullStack_Resume_2026.pdf"
           target="_blank"
           aria-label="Download resume (New‑grad ’26)"
           className="inline-block px-6 py-3 border border-zinc-300 dark:border-zinc-700 rounded-full text-gray-900 dark:text-gray-100 hover:bg-zinc-100 dark:hover:bg-zinc-800"
