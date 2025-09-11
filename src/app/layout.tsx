@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     title: "Lucas Anderson — Software Engineer",
     description: "BS CS ’26 • Building fast, scalable web apps",
     siteName: "Lucas Anderson",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lucas Anderson Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -43,7 +51,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body className={inter.className}>
         {/* Skip link for accessibility */}
-        <a href="#content" className="skip-link">Skip to content</a>
+        <a href="#content" className="skip-link">
+          Skip to content
+        </a>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <script
             type="application/ld+json"
