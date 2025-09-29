@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import Reveal from "./Reveal";
 
 export default function Projects() {
   const projects = [
@@ -247,9 +248,11 @@ export default function Projects() {
       id="projects"
       className="py-20 md:py-24 border-t border-zinc-200/60 dark:border-white/10"
     >
-      <h2 className="text-3xl md:text-4xl font-semibold mb-10 md:mb-12">
-        Projects
-      </h2>
+      <Reveal variant="slide-right" delay={150}>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-10 md:mb-12">
+          Projects
+        </h2>
+      </Reveal>
       <div
         className="grid gap-8 grid-cols-1 lg:grid-cols-2             
         [&>*:first-child]:col-span-2
@@ -261,7 +264,9 @@ export default function Projects() {
 "
       >
         {projects.map((p) => (
-          <ProjectCard key={p.title} {...p} />
+          <Reveal variant="fade" delay={150} key={p.title}>
+            <ProjectCard {...p} />
+          </Reveal>
         ))}
       </div>
     </section>
