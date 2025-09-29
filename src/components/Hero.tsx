@@ -11,17 +11,25 @@ export default function Hero() {
         <a
           href="mailto:lucas@lucasanderson.dev?subject=New-grad%20Software%20Engineer%20(May%202026)%20%E2%80%94%20Lucas%20Anderson"
           aria-label="Email Lucas about new‑grad software engineer roles (May 2026)"
-          className="inline-block px-6 py-3 rounded-full text-white bg-indigo-600 hover:bg-indigo-700"
+          className="px-5 py-2.5 relative rounded-md group text-white font-medium inline-block"
         >
-          Contact me
+          <span className="absolute top-0 left-0 w-full h-full rounded-md opacity-50 filter blur-sm bg-gradient-to-br from-black to-zinc-800"></span>
+          <span className="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded-md opacity-50 from-black to-zinc-800"></span>
+          <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded-md shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-black to-zinc-800"></span>
+          <span className="absolute inset-0 w-full h-full transition duration-200 ease-out rounded-md bg-gradient-to-br to-zinc-900 border border-zinc-800 from-zinc-800"></span>
+          <span className="relative">Contact Me</span>
         </a>
         <a
           href="/Lucas_Anderson_FullStack_Resume_2026.pdf"
           target="_blank"
           aria-label="Download resume (New‑grad ’26)"
-          className="inline-block px-6 py-3 border border-zinc-300 dark:border-zinc-700 rounded-full text-gray-900 dark:text-gray-100 hover:bg-zinc-100 dark:hover:bg-zinc-800"
+          className="px-5 py-2.5 relative rounded-md group text-white font-medium inline-block"
         >
-          Download resume
+          <span className="absolute top-0 left-0 w-full h-full rounded-md opacity-50 filter blur-sm bg-gradient-to-br from-indigo-600 to-sky-500"></span>
+          <span className="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded-md opacity-50 from-indigo-600 to-sky-500"></span>
+          <span className="absolute inset-0 w-full h-full transition-all duration-200 ease-out rounded-md shadow-xl bg-gradient-to-br filter group-active:opacity-0 group-hover:blur-sm from-indigo-600 to-sky-500"></span>
+          <span className="absolute inset-0 w-full h-full transition duration-200 ease-out rounded-md bg-gradient-to-br to-indigo-600 from-sky-500"></span>
+          <span className="relative">Download Resume</span>
         </a>
       </div>
       <div className="mt-4">
