@@ -1,8 +1,18 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 export default function Hero() {
   return (
     <div className="text-center py-24">
+      <div className="flex justify-center">
+        <Image
+          src={"/profile-picture.png"}
+          alt="profile picture"
+          className="rounded-[50%] bg-white "
+          width={200}
+          height={200}
+        />
+      </div>
       <Reveal variant="slide-right">
         <h1 className="text-5xl md:text-6xl lg:text-7xl tracking-tight font-extrabold bg-gradient-to-r from-sky-500 to-indigo-600 bg-[length:200%_200%] animate-gradient-x bg-clip-text text-transparent mb-5">
           Hi, I’m Lucas Anderson
@@ -10,7 +20,7 @@ export default function Hero() {
       </Reveal>
       <Reveal variant="fade" delay={150}>
         <p className="text-lg md:text-[1.1rem] leading-7 md:leading-8 text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          New Grad SWE (May &#39;26) • React/Next.js, TypeScript, Node, Postgres
+          New Grad SWE (May 2026) • React/Next.js, TypeScript, Node, Postgres
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
