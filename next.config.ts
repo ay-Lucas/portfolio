@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
+  outputFileTracingRoot: path.join(__dirname),
   webpack(config) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fileLoaderRule = config.module.rules.find((rule: any) =>

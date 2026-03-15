@@ -40,8 +40,6 @@ export default function NavBar() {
     return () => observer.disconnect();
   }, []);
 
-  // useEffect without import; add import from react
-
   return (
     <nav className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-black/40 border-b border-zinc-200/60 dark:border-white/10">
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-6 py-4">

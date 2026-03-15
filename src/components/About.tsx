@@ -13,8 +13,10 @@ export default function About() {
           Postgres • Vercel/CI/CD
         </div>
         <p className="mb-4 text-lg leading-7 md:text-[1.1rem] md:leading-8 max-w-prose md:max-w-none">
-          I ship fast, reliable web apps end to end. Recently, I cut page load
-          time by ~75% and external API calls by ~90% on a
+          I build and ship full-stack products end to end, from UI and product
+          direction through APIs, auth, data modeling, and deployment.
+          Recently, I cut page load time by ~75% and external API calls by ~90%
+          on a
           <a
             href="https://glimpse.lucasanderson.dev"
             target="_blank"
@@ -24,15 +26,17 @@ export default function About() {
             {" "}
             media discovery app
           </a>
-          . I also added AI recommendations (OpenAI), type‑safe Edge APIs with
-          Zod, and shipped auth, streaming providers, search, and watchlists.
-          I’m currently working on PhysiqueIQ in React Native.
+          . I also built AI recommendations (OpenAI), type-safe APIs, auth, and
+          search/watchlist flows. On PhysiqueIQ, I own the technical direction
+          across the landing site, mobile app, and backend while leading a
+          5-person capstone team.
         </p>
         <p className="text-lg leading-7 md:text-[1.1rem] md:leading-8 max-w-prose md:max-w-none">
           I’m primarily seeking New Grad Software Engineer roles (May 2026) and
-          open to part‑time work during the school year. I thrive on
-          product‑focused teams building web platforms, developer tools, or
-          content/search.
+          open to part‑time work during the school year. I’m a strong fit for
+          product-focused teams that value ownership, fast iteration, and solid
+          engineering fundamentals across frontend, backend, and developer
+          workflow.
         </p>
       </Reveal>
     </section>

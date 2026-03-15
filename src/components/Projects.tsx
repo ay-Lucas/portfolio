@@ -6,19 +6,24 @@ export default function Projects() {
     {
       title: "TV & Movie Discovery App",
       description:
-        "AI-assisted TV & movie discovery with streaming availability and ultra-fast detail pages.",
+        "Movie and TV discovery app with streaming availability, fast detail pages, and AI recommendations based on mood.",
       dates: "July 2024 – August 2025",
       tech: ["TypeScript", "React", "Next.js", "PostgreSQL", "Tailwind CSS"],
+      role: "Sole engineer",
+      architecture:
+        "Next.js app with Supabase auth, Postgres, Redis caching, and server-rendered pages",
+      impact:
+        "~75% faster loads and ~90% fewer external API calls after caching and rendering optimizations",
       liveUrl: "https://glimpse.lucasanderson.dev",
       codeUrl: "https://github.com/ay-lucas/glimpse",
       highlights: [
-        "~75% faster loads & ~90% fewer API calls via Next.js Server Components, ISR, Redis, and LQIP/CDN",
-        "AI “mood/vibe” recommendations (OpenAI) with cached results for low latency/cost.",
-        "Typed Edge APIs (Zod), Supabase Auth (JWT/RLS), Drizzle; search + watchlists.",
+        "Cut load times by about 75% and external API calls by about 90%",
+        "Built AI recommendations with cached results to keep responses fast and costs low",
+        "Shipped auth, search, watchlists, and protected API routes",
       ],
       challenges: [
-        "API quotas → precomputed pools + Redis warmers → ~90% fewer external calls",
-        "Slow LCP → Server Components + ISR + LQIP/CDN → ~75% faster loads",
+        "Worked around API limits with precomputed results and Redis warmers",
+        "Improved page speed with server rendering, caching, and image optimization",
       ],
       images: [
         {
@@ -78,19 +83,24 @@ export default function Projects() {
     {
       title: "Stock-Matic",
       description:
-        "Stock‑Matic is a fast, SSR/ISR Next.js stock dashboard with dynamic ticker routing and search. It delivers instant, server‑rendered charts plus news, backed by a Vercel serverless Express API integrating Yahoo Finance, Polygon.io, and Finnhub with automatic failover.",
+        "Stock dashboard with searchable ticker pages, server-rendered charts, and market news powered by a backend that falls back across multiple data providers.",
       dates: "January, September 2025",
       tech: ["Express.js", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+      role: "Sole engineer",
+      architecture:
+        "Next.js frontend with a serverless Express API and fallback across multiple market data providers",
+      impact:
+        "Built interactive dashboards over 50+ years of market data with validation and failover built into the API layer",
       liveUrl: "https://stock-matic.lucasanderson.dev",
       liveLabel: "Live",
       highlights: [
-        "SSR/ISR Next.js dashboard with sharable SEO friendly ticker urls and search.",
-        "Interactive, theme‑aware charts (20y, zoom presets).",
-        "Serverless API (Express) with Yahoo/Polygon/Finnhub + failover.",
+        "Built searchable ticker pages with shareable URLs and server-rendered content",
+        "Added interactive charts with long-range views and zoom controls",
+        "Used multiple market data providers so the app can recover from API outages",
       ],
       challenges: [
-        "Yahoo API flakiness → implemented redundant API fallbacks",
-        "Theme SSR hydration mismatches → next‑themes guards",
+        "Handled unreliable provider responses by adding fallback data sources",
+        "Fixed theme hydration issues between server and client rendering",
       ],
       images: [
         {
@@ -102,7 +112,7 @@ export default function Projects() {
     {
       title: "PhysiqueIQ",
       description:
-        "End-to-end mobile physique tracking platform I owned from product design through implementation, spanning the public Next.js landing site, React Native app, and backend scan pipeline for AI-assisted measurement extraction.",
+        "End-to-end physique tracking product covering the public website, mobile app, and backend scan flow for photo-based measurement estimates.",
       dates: "August 2025 – Present",
       tech: [
         "React Native (Expo)",
@@ -115,18 +125,25 @@ export default function Projects() {
         "Jest",
         "Maestro",
       ],
+      role:
+        "Project owner and technical lead for a 5-member capstone team",
+      architecture:
+        "Next.js website, React Native app, Express API, Supabase auth and storage, and a scan pipeline using OpenAI",
+      impact:
+        "Set the technical direction and shipped the public site, auth flows, scan processing, and regression checks",
       liveUrl: "https://physiqueiq.app",
       liveLabel: "Live",
+      codeNote: "Code private",
       highlights: [
-        "Owned the architecture and technical direction across the landing site, mobile app, and backend systems",
-        "Led a 5-member capstone team, coordinating delivery while keeping the React Native and API layers consistent",
-        "Engineered an `/api/scan` pipeline using Supabase Storage and OpenAI to extract body measurements from check-in photos",
-        "Built secure authentication with Supabase for email and OAuth sign-in, and added Jest and Maestro coverage to reduce regressions",
+        "Owned the architecture across the site, mobile app, and backend",
+        "Led a 5-member capstone team and kept delivery aligned across app and API work",
+        "Built an `/api/scan` flow that uses Supabase Storage and OpenAI to estimate body measurements from check-in photos",
+        "Added Supabase auth for email and social sign-in, plus Jest and Maestro coverage",
       ],
       challenges: [
-        "Turning subjective physique progress into a repeatable photo-analysis workflow with standardized check-ins",
-        "Keeping mobile, backend, and landing-site delivery aligned while multiple contributors shipped in parallel",
-        "Balancing product velocity with reliable auth, scan processing, and regression coverage in an in-progress release",
+        "Turned subjective progress tracking into a repeatable check-in flow",
+        "Kept the website, mobile app, and backend moving together while several people shipped in parallel",
+        "Balanced shipping speed with reliable auth, scan processing, and regression coverage",
       ],
       badge: "Live + in progress",
       images: [
@@ -142,14 +159,17 @@ export default function Projects() {
         "Real-time weather dashboard with radar and geolocation search.",
       dates: "June 2023 – August 2023",
       tech: ["JavaScript", "React", "Tailwind CSS"],
+      role: "Sole engineer",
+      architecture:
+        "React app with geolocation search, weather APIs, and interactive radar overlays",
       liveUrl: "https://weather.lucasanderson.dev",
       codeUrl: "https://github.com/ay-lucas/weather-app",
       highlights: [
         "Responsive dashboard with real-time forecasts and radar overlays",
-        "Geolocation search + clean, mobile-first UI",
+        "Built geolocation search and a clean mobile-first interface",
       ],
       challenges: [
-        "Choppy map tiles → memoized layers + debounced renders → smooth pan/zoom",
+        "Smoothed out map panning and zooming by reducing unnecessary re-renders",
       ],
       images: [
         {
@@ -189,12 +209,13 @@ export default function Projects() {
     {
       title: "GloboLingo – Language Learning App",
       description:
-        "Desktop app that teaches vocabulary with natural TTS and testable modules.",
+        "Desktop language learning app with text-to-speech and testable learning modules.",
       dates: "August 2024 - December 2024",
       tech: ["Java", "JavaFX", "AWS Polly", "JUnit"],
+      role: "Led a 4-person Scrum team",
       codeUrl: "https://github.com/ay-Lucas/Globo-Lingo",
       highlights: [
-        "Led 4-person Scrum team; modular OOP",
+        "Led a 4-person Scrum team and kept delivery organized across sprints",
         "AWS Polly text-to-speech for accessibility and engagement",
         "100% JUnit coverage with CI",
       ],
@@ -202,27 +223,29 @@ export default function Projects() {
     {
       title: "Weather Channel CLI",
       description:
-        "Go CLI fetching hourly/daily forecasts from undocumented endpoints",
+        "Go CLI that fetches hourly and daily forecasts from undocumented Weather.com endpoints",
       dates: "November 2023",
       tech: ["Go", "Colly"],
+      role: "Sole engineer",
       codeUrl: "https://github.com/ay-Lucas/weather-channel-cli",
       highlights: [
         "Reverse-engineered Weather.com endpoints",
-        "Resilient scraping (retries/backoff)",
+        "Added retries and backoff to make scraping more reliable",
         "Structured CLI output",
       ],
     },
     {
       title: "Google Calendar CLI",
       description:
-        "Implemented OAuth 2.0 and REST calls to manage calendar events from the terminal.",
+        "Command-line tool for creating, listing, and deleting Google Calendar events.",
       dates: "August 2023",
       tech: ["Node.js", "Express"],
+      role: "Sole engineer",
       codeUrl: "https://github.com/ay-Lucas/google-calendar-cli",
       highlights: [
         "OAuth 2.0 authentication",
         "Create, list, and delete events",
-        "Configurable calendars and profiles",
+        "Support for configurable calendars and profiles",
       ],
     },
   ];

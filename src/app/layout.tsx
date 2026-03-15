@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/next";
-import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lucasanderson.dev"),
@@ -10,12 +9,14 @@ export const metadata: Metadata = {
     default: "Lucas Anderson — Software Engineer",
     template: "%s — Lucas Anderson",
   },
-  description: "BS CS ’26 • Building fast, scalable web apps",
+  description:
+    "Lucas Anderson is a new-grad software engineer building full-stack apps with React, Next.js, TypeScript, Node, PostgreSQL, and React Native.",
   openGraph: {
     type: "website",
     url: "/",
     title: "Lucas Anderson — Software Engineer",
-    description: "BS CS ’26 • Building fast, scalable web apps",
+    description:
+      "New-grad full-stack engineer focused on React, Next.js, TypeScript, Node, PostgreSQL, and product-focused systems work.",
     siteName: "Lucas Anderson",
     images: [
       {
@@ -29,8 +30,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Lucas Anderson — Software Engineer",
-    description: "BS CS ’26 • Building fast, scalable web apps",
-    creator: "@",
+    description:
+      "New-grad full-stack engineer focused on React, Next.js, TypeScript, Node, PostgreSQL, and React Native.",
   },
   alternates: {
     canonical: "/",
@@ -40,8 +41,6 @@ export const metadata: Metadata = {
   },
 };
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
-
 export default function RootLayout({
   children,
 }: {
@@ -49,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body className={inter.className}>
+      <body className="antialiased">
         {/* Skip link for accessibility */}
         <a href="#content" className="skip-link">
           Skip to content

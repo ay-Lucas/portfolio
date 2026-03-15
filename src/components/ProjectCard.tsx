@@ -11,10 +11,14 @@ interface ProjectCardProps {
   title: string;
   description: string;
   tech: string[];
+  role?: string;
+  architecture?: string;
+  impact?: string;
   liveUrl?: string;
   codeUrl?: string;
   liveLabel?: string;
   codeLabel?: string;
+  codeNote?: string;
   dates?: string; // e.g., "2025 – Present" or "Jan–May 2024"
   highlights?: string[];
   challenges?: string[];
@@ -27,10 +31,14 @@ export default function ProjectCard({
   title,
   description,
   tech,
+  role,
+  architecture,
+  impact,
   liveUrl,
   codeUrl,
   liveLabel,
   codeLabel,
+  codeNote,
   dates,
   highlights,
   challenges,
@@ -69,6 +77,34 @@ export default function ProjectCard({
         </div>
       )}
       <p className="mb-4 text-zinc-700 dark:text-zinc-300">{description}</p>
+      {(role || architecture || impact) && (
+        <div className="mb-4 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+          {role && (
+            <p>
+              <span className="font-semibold text-zinc-900 dark:text-zinc-100">
+                Role:
+              </span>{" "}
+              {role}
+            </p>
+          )}
+          {architecture && (
+            <p>
+              <span className="font-semibold text-zinc-900 dark:text-zinc-100">
+                Architecture:
+              </span>{" "}
+              {architecture}
+            </p>
+          )}
+          {impact && (
+            <p>
+              <span className="font-semibold text-zinc-900 dark:text-zinc-100">
+                Impact:
+              </span>{" "}
+              {impact}
+            </p>
+          )}
+        </div>
+      )}
       {highlights && highlights.length > 0 && (
         <div className="mb-4">
           <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-200 mb-2">
@@ -121,6 +157,9 @@ export default function ProjectCard({
           >
             {codeLabel ?? "Code"}
           </Link>
+        )}
+        {codeNote && (
+          <span className="text-zinc-500 dark:text-zinc-400">{codeNote}</span>
         )}
       </div>
     </div>
