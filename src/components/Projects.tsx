@@ -81,7 +81,7 @@ export default function Projects() {
         "Stock‑Matic is a fast, SSR/ISR Next.js stock dashboard with dynamic ticker routing and search. It delivers instant, server‑rendered charts plus news, backed by a Vercel serverless Express API integrating Yahoo Finance, Polygon.io, and Finnhub with automatic failover.",
       dates: "January, September 2025",
       tech: ["Express.js", "TypeScript", "React", "Next.js", "Tailwind CSS"],
-      liveUrl: "https://physiqueiq.app",
+      liveUrl: "https://stock-matic.lucasanderson.dev",
       liveLabel: "Live",
       highlights: [
         "SSR/ISR Next.js dashboard with sharable SEO friendly ticker urls and search.",
@@ -100,22 +100,35 @@ export default function Projects() {
       ],
     },
     {
-      title: "PhysiqueIQ — Landing & Waitlist",
+      title: "PhysiqueIQ",
       description:
-        "I built the landing page and early-access funnel for PhysiqueIQ, a mobile app that makes physique progress measurable and visual through guided photos, body metrics, and AI-driven insights. The page introduces the product vision and captures verified sign-ups for the beta.",
-      dates: "September 2025",
-      tech: ["TypeScript", "React", "Next.js", "PostgreSQL", "Tailwind CSS"],
+        "End-to-end mobile physique tracking platform I owned from product design through implementation, spanning the public Next.js landing site, React Native app, and backend scan pipeline for AI-assisted measurement extraction.",
+      dates: "August 2025 – Present",
+      tech: [
+        "React Native (Expo)",
+        "TypeScript",
+        "Next.js",
+        "Express.js",
+        "Supabase",
+        "OpenAI",
+        "Tailwind CSS",
+        "Jest",
+        "Maestro",
+      ],
       liveUrl: "https://physiqueiq.app",
       liveLabel: "Live",
       highlights: [
-        "Double opt-in waitlist (Resend) with Supabase storage",
-        "Bot protection via Cloudflare Turnstile",
-        "Fast, responsive UI deployed on Vercel",
+        "Owned the architecture and technical direction across the landing site, mobile app, and backend systems",
+        "Led a 5-member capstone team, coordinating delivery while keeping the React Native and API layers consistent",
+        "Engineered an `/api/scan` pipeline using Supabase Storage and OpenAI to extract body measurements from check-in photos",
+        "Built secure authentication with Supabase for email and OAuth sign-in, and added Jest and Maestro coverage to reduce regressions",
       ],
       challenges: [
-        "Preventing bots from joining waitlist",
-        "Integrating Resend for email confirmation",
+        "Turning subjective physique progress into a repeatable photo-analysis workflow with standardized check-ins",
+        "Keeping mobile, backend, and landing-site delivery aligned while multiple contributors shipped in parallel",
+        "Balancing product velocity with reliable auth, scan processing, and regression coverage in an in-progress release",
       ],
+      badge: "Live + in progress",
       images: [
         {
           src: "/screenshots/physiqueiq_site/physiqueiq_site_landing.png",
@@ -172,36 +185,6 @@ export default function Projects() {
           alt: "Weather App — mobile daily accordion",
         },
       ],
-    },
-    {
-      title: "PhysiqueIQ — AI Physique Analyzer",
-      description:
-        "Estimates body-part measurements and symmetry from standardized photos, visualizes change over time, and offers simple periodized templates. On-device computer vision with in-house pose/measurement models (in training)",
-      dates: "August 2025 – Present",
-      tech: [
-        "React Native (Expo)",
-        "TypeScript",
-        "Express.js",
-        "Supabase (Auth, Postgres, RLS)",
-        "VisionCamera (frame processors)",
-        "TensorFlow Lite / MediaPipe",
-        "PyTorch (model training)",
-        "ONNX / Core ML conversion",
-      ],
-      liveUrl:
-        "mailto:join@physiqueiq.app?subject=PhysiqueIQ%20Waitlist&body=Name:%0APlatform%20(iOS/Android):%0AFitness%20goal%20(optional):",
-      liveLabel: "Join the waitlist",
-      highlights: [
-        "Custom vision models for landmarks, silhouette, and tape-measure proxies (on-device)",
-        "Timelines, body-part trend charts, and symmetry scores",
-        "Hypertrophy templates & specialization cycles (export to Hevy/CSV/PDF)",
-      ],
-      challenges: [
-        "Dataset collection/labeling for relaxed poses across lighting, distances, and physiques",
-        "UX for pose standardization",
-        "Privacy and on-device processing",
-      ],
-      badge: "In progress",
     },
     {
       title: "GloboLingo – Language Learning App",
