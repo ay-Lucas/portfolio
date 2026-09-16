@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     template: "%s — Lucas Anderson",
   },
   description:
-    "Lucas Anderson is a new-grad software engineer building full-stack apps with React, Next.js, TypeScript, Node, PostgreSQL, and React Native.",
+    "Full-stack software engineer graduating December 2026. Explore Lucas Anderson's work in React, Next.js, React Native, Node.js, and PostgreSQL.",
   openGraph: {
     type: "website",
     url: "/",
     title: "Lucas Anderson — Software Engineer",
     description:
-      "New-grad full-stack engineer focused on React, Next.js, TypeScript, Node, PostgreSQL, and product-focused systems work.",
+      "Full-stack software engineer graduating December 2026, building web and mobile products with TypeScript, React, Node.js, and PostgreSQL.",
     siteName: "Lucas Anderson",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lucas Anderson — Software Engineer",
     description:
-      "New-grad full-stack engineer focused on React, Next.js, TypeScript, Node, PostgreSQL, and React Native.",
+      "Full-stack software engineer graduating December 2026, building web and mobile products with TypeScript, React, Node.js, and PostgreSQL.",
   },
   alternates: {
     canonical: "/",

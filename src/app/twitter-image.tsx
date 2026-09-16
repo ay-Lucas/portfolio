@@ -25,15 +25,16 @@ export default function Image() {
       >
         <div style={{ opacity: 0.9 }}>Lucas Anderson</div>
         <div style={{ fontSize: 28, fontWeight: 600, marginTop: 8 }}>
-          Software Engineer — BS CS ’26
+          Full-stack software engineer • CS, Dec 2026
         </div>
         <div style={{ fontSize: 24, marginTop: 24, opacity: 0.85 }}>
-          Building fast, scalable web apps
+          Web and mobile products, built end to end
         </div>
-        <div style={{ fontSize: 20, marginTop: 8, opacity: 0.8 }}>lucasanderson.dev</div>
+        <div style={{ fontSize: 20, marginTop: 8, opacity: 0.8 }}>
+          lucasanderson.dev
+        </div>
       </div>
     ),
-    { ...size }
+    { ...size },
   );
 }
-

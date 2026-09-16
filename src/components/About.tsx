@@ -4,39 +4,38 @@ export default function About() {
   return (
     <section id="about" className="py-20 md:py-24">
       <Reveal variant="fade">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-2">About Me</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-2">About</h2>
       </Reveal>
       <Reveal variant="fade" delay={150}>
         <div className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
-          Columbia, SC • CS &#39;26, University of South Carolina • New‑grad May
-          &#39;26 • Open to part‑time now • React/Next.js, TypeScript, Node,
-          Postgres • Vercel/CI/CD
+          Columbia, South Carolina • B.S. Computer Science, expected Dec 2026 •
+          Open to U.S. roles
         </div>
         <p className="mb-4 text-lg leading-7 md:text-[1.1rem] md:leading-8 max-w-prose md:max-w-none">
-          I build and ship full-stack products end to end, from UI and product
-          direction through APIs, auth, data modeling, and deployment.
-          Recently, I cut page load time by ~75% and external API calls by ~90%
-          on a
+          I built
           <a
             href="https://glimpse.lucasanderson.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="underline underline-offset-2"
           >
-            {" "}
-            media discovery app
-          </a>
-          . I also built AI recommendations (OpenAI), type-safe APIs, auth, and
-          search/watchlist flows. On PhysiqueIQ, I own the technical direction
-          across the landing site, mobile app, and backend while leading a
-          5-person capstone team.
+            {" Glimpse"}
+          </a>{" "}
+          because I wanted a better way to find something to watch. It combines
+          streaming availability with mood-based recommendations. I later
+          reworked its rendering and caching, cutting page loads by about 75%
+          and third-party API calls by about 90%.
+        </p>
+        <p className="mb-4 text-lg leading-7 md:text-[1.1rem] md:leading-8 max-w-prose md:max-w-none">
+          I also led a five-person capstone team that built PhysiqueIQ, a React
+          Native app backed by Express and Supabase. I set the architecture,
+          built the core auth and scan flows, and coordinated work across the
+          mobile app and backend.
         </p>
         <p className="text-lg leading-7 md:text-[1.1rem] md:leading-8 max-w-prose md:max-w-none">
-          I’m primarily seeking New Grad Software Engineer roles (May 2026) and
-          open to part‑time work during the school year. I’m a strong fit for
-          product-focused teams that value ownership, fast iteration, and solid
-          engineering fundamentals across frontend, backend, and developer
-          workflow.
+          I currently work as a Sales Advisor at Best Buy. I’m open to part-time
+          software engineering work while I finish school and full-time roles
+          after I graduate in December 2026.
         </p>
       </Reveal>
     </section>

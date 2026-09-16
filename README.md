@@ -1,60 +1,30 @@
-# Lucas Anderson — New Grad SWE (May ’26)
+# Lucas Anderson
 
 [Live Portfolio](https://lucasanderson.dev)
 
-Columbia, SC • CS ’26 at the University of South Carolina. I build fast, reliable web apps end‑to‑end with React/Next.js, TypeScript, Node/Postgres. Open to New Grad Software Engineer roles (May 2026) and part‑time work during the school year.
+I’m a full-stack software engineer graduating from the University of South Carolina in December 2026. I build web and mobile products with TypeScript, React, Node.js, and PostgreSQL.
 
 [![CI](https://github.com/ay-Lucas/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/ay-Lucas/portfolio/actions/workflows/ci.yml)
 
-## Highlights
+## Selected Work
 
-- **Performance:** ~75% faster loads and ~90% fewer external API calls on a TV/Movie discovery app (RSC, ISR, Redis, image optimizations).
-- **UX:** Swiper carousel with fullscreen lightbox, smooth anchor scrolling, dark mode, reduced‑motion support.
-- **SEO:** Expanded metadata (Open Graph + Twitter), dynamic OG images, sitemap/robots, JSON‑LD.
-- **A11y:** Skip link, focus‑visible styles, accessible nav and external links.
-- **Quality bar:** Type-checking, ESLint, and production builds run in CI on every push.
+- **[Glimpse](https://glimpse.lucasanderson.dev):** Movie and TV discovery with streaming availability and mood-based recommendations. Redis caching and rendering changes cut page loads by about 75% and third-party API calls by about 90%. [Source](https://github.com/ay-lucas/glimpse)
+- **[PhysiqueIQ](https://physiqueiq.app):** A React Native physique-tracking app built by a five-person capstone team I led. I set the architecture and built the core auth and photo-scan flows.
+- **[Stock-Matic](https://stock-matic.lucasanderson.dev):** A market dashboard for exploring more than 50 years of price data, backed by an API with validation and automatic provider failover.
 
-## Projects
+## Built With
 
-- **Glimpse — TV/Movie Discovery:** AI recommendations by mood/vibe, watchlists, streaming availability.
-  - Live: https://glimpse.lucasanderson.dev • Code: https://github.com/ay-lucas/glimpse
-- **Weather App:** Real‑time forecasts with interactive radar and geolocation search.
-  - Live: https://weather.lucasanderson.dev • Code: https://github.com/ay-lucas/weather-app
-- **GloboLingo — Language Learning:** AWS Polly TTS; 100% unit test coverage (JUnit).
-  - Code: https://github.com/ay-Lucas/Globo-Lingo
-- **PhysiqueIQ (In Progress):** React Native capstone; designing on‑device CV + training in‑house models. Join the waitlist from the site.
-  - Live: https://physiqueiq.app • Code: private team/capstone repo
-
-## Stack
-
-- **Front‑end:** React, Next.js, TypeScript, Tailwind CSS, Swiper
-- **Back‑end:** Node.js, Express, PostgreSQL, Drizzle ORM, Supabase (Auth/RLS)
-- **Infra/Tools:** Vercel, Redis, CI/CD, ESLint, TypeScript, Playwright (planned)
+Next.js, React, TypeScript, and Tailwind CSS. The site includes light and dark themes, accessible navigation, project screenshot galleries, social metadata, and Vercel Analytics.
 
 ## Local Development
 
-Prereqs: Node 18+.
+Requires Node.js 18 or newer.
 
 ```bash
 npm install
 npm run dev
-# open http://localhost:3000
 ```
-
-Quality checks:
 
 ```bash
-npm run typecheck
-npm run lint
-npm run build
+npm run check
 ```
-
-## Contact
-
-- Portfolio: https://lucasanderson.dev
-- Resume: https://lucasanderson.dev/Lucas_Anderson_FullStack_Resume_2026.pdf
-- Email: lucas@lucasanderson.dev
-- LinkedIn: https://linkedin.com/in/lucas-c-anderson
-- GitHub: https://github.com/ay-Lucas
-
-© 2025 Lucas Anderson

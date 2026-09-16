@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
+  { href: "#projects", label: "Work" },
   {
     href: "/Lucas_Anderson_FullStack_Resume_2026.pdf",
     label: "Resume",

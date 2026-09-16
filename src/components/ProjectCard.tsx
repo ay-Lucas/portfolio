@@ -12,8 +12,6 @@ interface ProjectCardProps {
   description: string;
   tech: string[];
   role?: string;
-  architecture?: string;
-  impact?: string;
   liveUrl?: string;
   codeUrl?: string;
   liveLabel?: string;
@@ -21,7 +19,6 @@ interface ProjectCardProps {
   codeNote?: string;
   dates?: string; // e.g., "2025 – Present" or "Jan–May 2024"
   highlights?: string[];
-  challenges?: string[];
   image?: CarouselImage;
   images?: CarouselImage[];
   badge?: string;
@@ -32,8 +29,6 @@ export default function ProjectCard({
   description,
   tech,
   role,
-  architecture,
-  impact,
   liveUrl,
   codeUrl,
   liveLabel,
@@ -41,7 +36,6 @@ export default function ProjectCard({
   codeNote,
   dates,
   highlights,
-  challenges,
   image,
   images,
   badge,
@@ -77,53 +71,23 @@ export default function ProjectCard({
         </div>
       )}
       <p className="mb-4 text-zinc-700 dark:text-zinc-300">{description}</p>
-      {(role || architecture || impact) && (
+      {role && (
         <div className="mb-4 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
-          {role && (
-            <p>
-              <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-                Role:
-              </span>{" "}
-              {role}
-            </p>
-          )}
-          {architecture && (
-            <p>
-              <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-                Architecture:
-              </span>{" "}
-              {architecture}
-            </p>
-          )}
-          {impact && (
-            <p>
-              <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-                Impact:
-              </span>{" "}
-              {impact}
-            </p>
-          )}
+          <p>
+            <span className="font-semibold text-zinc-900 dark:text-zinc-100">
+              Role:
+            </span>{" "}
+            {role}
+          </p>
         </div>
       )}
       {highlights && highlights.length > 0 && (
         <div className="mb-4">
           <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-200 mb-2">
-            Highlights
+            What I did
           </h4>
           <ul className="list-disc list-inside space-y-1 text-zinc-700 dark:text-zinc-100">
             {highlights.map((h) => (
-              <li key={h}>{h}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-      {challenges && challenges.length > 0 && (
-        <div className="mb-4">
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-200 mb-2">
-            Challenges
-          </h4>
-          <ul className="list-disc list-inside space-y-1 text-zinc-700 dark:text-zinc-100">
-            {challenges.map((h) => (
               <li key={h}>{h}</li>
             ))}
           </ul>
@@ -146,7 +110,7 @@ export default function ProjectCard({
             target="_blank"
             className="text-blue-500 hover:underline"
           >
-            {liveLabel ?? "Live"}
+            {liveLabel ?? "Live site"}
           </Link>
         )}
         {codeUrl && (
@@ -155,7 +119,7 @@ export default function ProjectCard({
             target="_blank"
             className="text-blue-500 hover:underline"
           >
-            {codeLabel ?? "Code"}
+            {codeLabel ?? "Source code"}
           </Link>
         )}
         {codeNote && (
